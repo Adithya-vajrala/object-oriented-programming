@@ -1,8 +1,53 @@
 package com.java.oops;
 public class Main {
     public static void main(String[] args) {
-        Product product = new Product();
-        product.id = 522141;
-
+        Product product1 = new Product();
+        Product product2 = new Product();
+        product1.id = 522141;
+        product1.category = "Shirt";
+        product1.name = "U.S. Polo Assn. Denim Co.";
+        product1.company = "Us Polo";
+        product1.description = "Pure Cotton Casual Shirt";
+        product1.rating = 4.3F;
+        product1.ratingCount = 304;
+        product1.maxRetailPrice = 1999;
+        product1.discountPercentage = 23;
+        product1.finalSellingPrice = 1539;
+        product1.size = 38;
+        product2.id = 31472271;
+        product2.category = "Shirt";
+        product2.name = "Campus Sutra Shirt";
+        product2.company = "Campus Sutra";
+        product2.description = "Men Comfort Opaque Checked Casual Shirt";
+        product2.rating = 3.8F;
+        product2.ratingCount = 2000;
+        product2.maxRetailPrice = 1999;
+        product2.discountPercentage = 40;
+        product2.finalSellingPrice = 1199;
+        product2.size = 40;
+        System.out.println("-----------Product1 Details-----------");
+        System.out.println("ID:" + product1.id);
+        System.out.println("Category:" + product1.category);
+        System.out.println("Name:" + product1.name);
+        System.out.println("Company:" + product1.company);
+        System.out.println("Description:" + product1.description);
+        System.out.println("Rating" + product1.rating);
+        System.out.println("Rating Count:" + product1.ratingCount);
+        System.out.println("MRP:" + product1.maxRetailPrice);
+        System.out.println("Discount Percentage:" + product1.discountPercentage);
+        System.out.println("Final Selling:" + product1.finalSellingPrice);
+        System.out.println("Size:" + product1.size);
+        System.out.println("-----------Product2 Details-----------");
+        System.out.println("ID:" + product2.id);
+        System.out.println("Category:" + product2.category);
+        System.out.println("Name:" + product2.name);
+        System.out.println("Company:" + product2.company);
+        System.out.println("Description:" + product2.description);
+        System.out.println("Rating" + product2.rating);
+        System.out.println("Rating Count:" + product2.ratingCount);
+        System.out.println("MRP:" + product2.maxRetailPrice);
+        System.out.println("Discount Percentage:" + product2.discountPercentage);
+        System.out.println("Final Selling:" + product2.finalSellingPrice);
+        System.out.println("Size:" + product2.size);
     }
 }

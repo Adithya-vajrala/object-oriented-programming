@@ -5,11 +5,12 @@ public class Product {
     String category;
     String name;
     String company;
+    String description;
     int maxRetailPrice;
     byte discountPercentage;
-    double discountAmount ;
     int finalSellingPrice ;
     float rating;
     short ratingCount;
     boolean isAvailable;
+    byte size;
     }

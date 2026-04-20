@@ -47,5 +47,27 @@ public class Main {
         System.out.println("Password:" + customer2.password);
         System.out.println("Pincode:" + customer2.pincode);
         System.out.println("Address:" + customer2.address);
+        Order order = new Order();
+        System.out.println("--------------- Order1 Details ------------");
+        System.out.println("Order ID:" + order.orderId);
+        System.out.println("User ID:" + order.userId);
+        System.out.println("Product:" + order.productName);
+        System.out.println("Total Amount:" + order.totalAmount);
+        System.out.println("Status:" + order.status);
+        System.out.println("Order Date:" + order.orderDate);
+        System.out.println("Delivery Date:" + order.deliveryDate);
+        System.out.println("Shipping Address:" + order.shippingAddress);
+        System.out.println("Payment Status:" + order.paymentStatus);
+        Order order1 = new Order(52261,522647,"Shirt",1999,"order is picking","22-12-1997","17-01-1998","Guntur,India",false);
+        System.out.println("--------------- Order2 Details ------------");
+        System.out.println("Order ID:" + order1.orderId);
+        System.out.println("User ID:" + order1.userId);
+        System.out.println("Product:" + order1.productName);
+        System.out.println("Total Amount:" + order1.totalAmount);
+        System.out.println("Status:" + order1.status);
+        System.out.println("Order Date:" + order1.orderDate);
+        System.out.println("Delivery Date:" + order1.deliveryDate);
+        System.out.println("Shipping Address:" + order1.shippingAddress);
+        System.out.println("Payment Status:" + order1.paymentStatus);
     }
 }

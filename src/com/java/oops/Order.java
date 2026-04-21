@@ -34,4 +34,15 @@ public class Order {
         this.shippingAddress = shippingAddress;
         this.paymentStatus = paymentStatus;
     }
+    void displayOrderDetails(){
+        System.out.println("Order ID:" + orderId);
+        System.out.println("User ID:" + userId);
+        System.out.println("Product:" + productName);
+        System.out.println("Total Amount:" + totalAmount);
+        System.out.println("Status:" + status);
+        System.out.println("Order Date:" + orderDate);
+        System.out.println("Delivery Date:" + deliveryDate);
+        System.out.println("Shipping Address:" + shippingAddress);
+        System.out.println("Payment Status:" + paymentStatus);
+    }
 }

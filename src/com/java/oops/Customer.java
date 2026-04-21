@@ -29,4 +29,14 @@ public class Customer {
         this.pincode = pincode;
         this.address = address;
     }
+    void displayCustomerDetails(){
+        System.out.println("Customer ID:" + id);
+        System.out.println("Customer Name:" + name);
+        System.out.println("Phone Number:" + phoneNo);
+        System.out.println("EmailID:" + emailId);
+        System.out.println("Gender:" + gender);
+        System.out.println("Password:" + password);
+        System.out.println("Pincode:" + pincode);
+        System.out.println("Address:" + address);
+    }
 }

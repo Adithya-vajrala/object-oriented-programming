@@ -42,5 +42,18 @@ public class Product {
         this.isAvailable = isAvailable;
         this.size = size;
     }
+    void displayProductDetails(){
+        System.out.println("ID:" + id);
+        System.out.println("Category:" + category);
+        System.out.println("Name:" + name);
+        System.out.println("Company:" + company);
+        System.out.println("Description:" + description);
+        System.out.println("Rating" + rating);
+        System.out.println("Rating Count:" + ratingCount);
+        System.out.println("MRP:" + maxRetailPrice);
+        System.out.println("Discount Percentage:" + discountPercentage);
+        System.out.println("Final Selling:" + finalSellingPrice);
+        System.out.println("Size:" + size);
+    }
 }
 

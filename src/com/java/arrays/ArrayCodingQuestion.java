@@ -11,6 +11,8 @@ public class ArrayCodingQuestion {
         System.out.println("highest element:" + highestElement);
     }
 
+
+
     public static int[] sortingArrayOfElements(int[] element) {
         int[] sortedArray = element;
         int temp;
@@ -30,6 +32,7 @@ public class ArrayCodingQuestion {
         int[] elements = {1,2,6,3,0};
         findingHighestElement(elements);
         int[] sortedElements = sortingArrayOfElements(elements);
+        System.out.println(sortedElements);
         for (int i = 0; i < sortedElements.length ; i++) {
             System.out.print(sortedElements[i]);
         }

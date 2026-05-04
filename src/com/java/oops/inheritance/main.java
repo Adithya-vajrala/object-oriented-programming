@@ -8,9 +8,9 @@ public class main {
         System.out.println("Enter the MRP of the product: ");
         int maximumRetailPrice = scanner.nextInt();
         scanner.nextLine();
-        System.out.println("Enter Membership Type: ");
-        String membershipType = scanner.nextLine();
-        if (membershipType == "Normal"){
+        System.out.println("Enter Membership Type: (1- normal),(2-Premium)");
+        int membershipType = scanner.nextInt();
+        if (membershipType == 1){
             RegularCustomer normal = new RegularCustomer(12,"shoe","vajrala@gamil.com",maximumRetailPrice,50,"regular");
             normal.displayingPayoutAmount();
         }else {

@@ -6,9 +6,6 @@ public class Customer {
     String email;
     int mrp;
 
-    public Customer() {
-    }
-
     public Customer(int id, String name, String email,int mrp) {
         this.id = id;
         this.name = name;

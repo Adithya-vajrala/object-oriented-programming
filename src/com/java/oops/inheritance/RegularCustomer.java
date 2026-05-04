@@ -9,8 +9,7 @@ public class RegularCustomer extends Customer{
         super(id, name, email,mrp);
         this.shippingCharges = shippingCharges;
         this.memberShipType = memberShipType;
-        finalPrice += mrp * 30 / 100;
-        finalPrice += shippingCharges;
+        finalPrice += mrp - (mrp * 30 / 100) + shippingCharges;
     }
     void displayingPayoutAmount(){
         System.out.println("Regular Customer");

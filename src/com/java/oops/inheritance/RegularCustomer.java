@@ -13,6 +13,8 @@ public class RegularCustomer extends Customer{
     }
     @Override
     public void displayDetails(){
+
+
         super.displayDetails();
         System.out.println("Regular Customer");
         System.out.println("Shipping Charges: " + shippingCharges);

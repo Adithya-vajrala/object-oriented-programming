@@ -11,7 +11,9 @@ public class RegularCustomer extends Customer{
         this.memberShipType = memberShipType;
         finalPrice += mrp - (mrp * 30 / 100) + shippingCharges;
     }
-    void displayingPayoutAmount(){
+    @Override
+    public void displayDetails(){
+        super.displayDetails();
         System.out.println("Regular Customer");
         System.out.println("Shipping Charges: " + shippingCharges);
         System.out.println("Payable Amount: " + finalPrice);

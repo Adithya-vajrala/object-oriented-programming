@@ -10,7 +10,4 @@ public class CertificateServicebyGov extends CertificateService {
     public  Certificate getMyCertficate(ApplicationForm form){
         return attender.processCertificate(form);
     }
-    public void displayCertificate(){
-
-    }
 }

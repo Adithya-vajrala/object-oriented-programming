@@ -10,4 +10,15 @@ public class ProductUI {
         int maxRetailPrice = InputUtil.getInt("Enter the MRP:");
         return new Product(id,name,category,maxRetailPrice);
     }
+    public int userOptionMenu(){
+        System.out.println("\n----- PRODUCTS MANAGEMENT SYSTEM ------");
+        System.out.println("1. Add Product");
+        System.out.println("2. Display All Products");
+        System.out.println("3. Search Product");
+        System.out.println("4. Update Product");
+        System.out.println("5. Delete Product");
+        System.out.println("6. Exit");
+        int choice = InputUtil.getInt("Enter the your Choice:");
+        return choice;
+    }
 }

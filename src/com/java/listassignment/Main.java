@@ -9,19 +9,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ProductService service = new ProductServiceImpl();
+        ProductUI ui = new ProductUI();
         boolean running = true;
         while (running){
-            System.out.println("\n----- PRODUCTS MANAGEMENT SYSTEM ------");
-            System.out.println("1. Add Product");
-            System.out.println("2. Display All Products");
-            System.out.println("3. Search Product");
-            System.out.println("4. Update Product");
-            System.out.println("5. Delete Product");
-            System.out.println("6. Exit");
-            int choice = InputUtil.getInt("Enter the your Choice:");
+            int choice = ui.userOptionMenu();
             switch (choice){
                 case 1:
-                    ProductUI ui = new ProductUI();
                     Product product = ui.getProductDetails();
                     try {
                         service.add(product);

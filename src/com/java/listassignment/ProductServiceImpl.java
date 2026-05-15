@@ -29,7 +29,7 @@ public class ProductServiceImpl implements ProductService{
                 return product;
             }
         }
-        throw new ProductNotFoundException("Product Not Found with this" + id);
+        throw new ProductNotFoundException("Product Not Found with this Id:" + id);
     }
 
     @Override
@@ -45,20 +45,20 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public void update(int id) {
-        Product existsProduct = findProductById(id);
-        if (existsProduct == null) {
-            throw new ProductNotFoundException("Product is not found with this " + id);
+        try {
+            Product existsProduct = findProductById(id);
+            ProductUI ui = new ProductUI();
+            Product newProduct = ui.getProductDetails();
+            existsProduct.id = newProduct.id;
+            existsProduct.name = newProduct.name;
+            existsProduct.category = newProduct.category;
+            existsProduct.maxRetailPrice = newProduct.maxRetailPrice;
+            System.out.println("product updated succesfully");
+        }catch (ProductNotFoundException e){
+            System.out.println(e.getMessage());
         }
-        ProductUI ui = new ProductUI();
-        Product newProduct = ui.getProductDetails();
-        existsProduct.id = newProduct.id;
-        existsProduct.name = newProduct.name;
-        existsProduct.category = newProduct.category;
-        existsProduct.maxRetailPrice = newProduct.maxRetailPrice;
-        System.out.println("product updated succesfully");
+
     }
-
-
     @Override
     public void delete(Product product) {
         productList.remove(product);
@@ -67,12 +67,13 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public void deleteById(int id) {
-        Product product = findProductById(id);
-        if (product != null){
+        try {
+            Product product = findProductById(id);
             productList.remove(product);
             System.out.println("product removed successfully");
-        }else {
-            throw new ProductNotFoundException("Product not found with this" + id);
+        }catch (ProductNotFoundException e){
+            System.out.println(e.getMessage());
         }
+
     }
 }

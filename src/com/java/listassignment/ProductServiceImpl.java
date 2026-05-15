@@ -64,7 +64,6 @@ public class ProductServiceImpl implements ProductService{
         productList.remove(product);
         System.out.println("product removed successfully");
     }
-
     @Override
     public void deleteById(int id) {
         try {

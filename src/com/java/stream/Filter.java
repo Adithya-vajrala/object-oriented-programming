@@ -21,9 +21,7 @@ public class Filter {
 
             //create list of integers
             //print numbers greater than 50
-        List<Integer> nums2 = Arrays.asList(
-                10, 25, 60, 80, 45, 90
-        );
+        List<Integer> nums2 = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
         nums2.stream().filter(num -> num > 50).forEach(System.out::println);
 
         //Write code to:

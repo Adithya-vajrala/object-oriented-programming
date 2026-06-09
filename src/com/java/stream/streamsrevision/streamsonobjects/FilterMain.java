@@ -1,8 +1,8 @@
-package com.java.stream.streamsrevision.filteronobjects;
+package com.java.stream.streamsrevision.streamsonobjects;
 
 import java.util.List;
 
-public class Main {
+public class FilterMain {
     public static void main(String[] args) {
         List<Employee> employees = List.of(new Employee(1,"adithya",200000),new Employee(2,"sai",200));
         //Using Streams, get all employees whose salary is greater than 50000

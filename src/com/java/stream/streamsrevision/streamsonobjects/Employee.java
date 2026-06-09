@@ -1,4 +1,4 @@
-package com.java.stream.streamsrevision.filteronobjects;
+package com.java.stream.streamsrevision.streamsonobjects;
 
 class Employee {
     private int id;
